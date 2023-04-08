@@ -1,0 +1,15 @@
+.block-tags{
+    border: 2px solid green;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #025A4E;
+    color: rgb(237,231,222);
+}
+
+.tag-blocks-right{
+    border: 2px solid green;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #025A4E;
+    color: rgb(237,231,222);
+}

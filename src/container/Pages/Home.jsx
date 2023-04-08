@@ -4,6 +4,7 @@ import '../../static/styles/Home.css';
 import Introduction from '../../components/Introduction';
 import Footer from '../../components/Footer';
 import Contact from '../../components/Contact';
+import About from '../../components/About';
 const Home = () => {
 
   const bgImage = "../../static/Images/background.jpeg";
@@ -12,6 +13,7 @@ const Home = () => {
       <div>
         <Navbar />
         <Introduction />
+        <About />
         <Contact />
         <Footer />
       </div>
