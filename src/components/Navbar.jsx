@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import SvgIcon from './SvgIcon';
 import { Sling as Hamburger } from 'hamburger-react';
-
+import { Link } from 'react-scroll';
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
@@ -22,10 +22,29 @@ const Navbar = () => {
                 </div>
                 <div className='w-full pl-5 pr-5  flex items-center flex-row-reverse flex-wrap'>
                     <div className='hidden md:flex  w-96   mr-[1rem] md:mr-[3rem]'>
-                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#about-me" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>About</motion.a>
-                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Experience</motion.a>
-                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Projects</motion.a>
-                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#contact" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
+                        <motion.p whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} className='text-white font-Bebas text-xl hover:text-amber-400 hover:scale-125  duration-150 flex-1 p-3 ms-4'>
+                            <Link to='about-me' activeClass="active" spy={true} smooth={true} offset={50} duration={500} >
+                                <a href="#about-me" >About</a>
+                            </Link>
+                        </motion.p>
+
+                        <motion.p whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} className='text-white font-Bebas text-xl hover:text-amber-400 hover:scale-125  duration-150 flex-1 p-3 ms-4'>
+                            <Link to='Exprience' activeClass="active" spy={true} smooth={true} offset={50} duration={500} >
+                                <a href="#Experience" >Experience</a>
+                            </Link>
+                        </motion.p>
+
+                        <motion.p whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} className='text-white font-Bebas text-xl hover:text-amber-400 hover:scale-125  duration-150 flex-1 p-3 ms-4'>
+                            <Link to='projects' activeClass="active" spy={true} smooth={true} offset={50} duration={500} >
+                                <a href="#projects" >Projects</a>
+                            </Link>
+                        </motion.p>
+
+                        <motion.p whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} className='text-white font-Bebas text-xl hover:text-amber-400 hover:scale-125  duration-150 flex-1 p-3 ms-4'>
+                            <Link to='contact' activeClass="active" spy={true} smooth={true} offset={50} duration={500} >
+                                <a href="#contact" >Contact</a>
+                            </Link>
+                        </motion.p>
                     </div>
                     <div className='md:hidden'>
                         <Hamburger color='white' direction='right' duration={0.8} toggled={open} toggle={setOpen} />

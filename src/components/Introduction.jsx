@@ -1,9 +1,14 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import LaptopSvg from './LaptopSvg';
 import Resume from '../static/documents/resume.pdf'
 
 const Introduction = () => {
+
+    const transition = { duration: 2, repeat: Infinity, repeatType: "loop", repeatDelay: 1, ease: "easeInOut" }
+
+
     return (
         <div className=' p-4 md:p-9 intro-container'>
             <div className='text-white grid col-span-6 grid-col-1 lg:grid-cols-2'>
@@ -23,19 +28,19 @@ const Introduction = () => {
                         />
                     </p>
                     <p className='px-3 my-3 text-justify md:text-left md:px-0 font-Nunito text-xl text-white'>
-                            Ethusiactic web Devloper , love to design solutions which helps people across the globe. Fond of learning new Things! 
+                        Ethusiactic web Devloper , love to design solutions which helps people across the globe. Fond of learning new Things!
 
                     </p>
                     <div className='flex justify-center  md:justify-start my-4 py-4'>
-                        <motion.button whileHover={{scale:1.10 , backgroundColor:"rgb(251 ,191 ,36)",color:"black",fontWeight:"bold"}} className='border-2 text-amber-400 rounded-xl p-3 font-Nunito border-white' >
+                        <motion.button whileHover={{ scale: 1.10, backgroundColor: "rgb(251 ,191 ,36)", color: "black", fontWeight: "bold" }} className='border-2 text-amber-400 rounded-xl p-3 font-Nunito border-white' >
                             <a href={Resume} download="Trushil Dhokiya Resume">
-                            Download Resume
+                                Download Resume
                             </a>
                         </motion.button>
                     </div>
                 </div>
-                <div className='hidden md:flex'>
-                    {/* pass for image section update later: last updated:  (4/8/23)  */}
+                <div className='hidden md:flex justify-center'>
+                    <LaptopSvg />
                 </div>
             </div>
         </div>

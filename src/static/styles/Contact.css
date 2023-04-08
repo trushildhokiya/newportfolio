@@ -1,3 +1,7 @@
-svg:hover path{
+.svgZoom:hover path {
     fill: rgb(240, 224, 202)
 }
+
+/* .svgGlow path{
+    fill: rgba(50,50,250,0.7)
+} */

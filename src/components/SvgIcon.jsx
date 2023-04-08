@@ -7,7 +7,7 @@ const SvgIcon = () => {
 
     return (
         <div className='flex'>
-            <svg className="items-center mt-3" xmlns='' width="70" height="60" viewBox='0 -20 80 120'>
+            <svg className="items-center mt-3 svgZoom" xmlns='' width="70" height="60" viewBox='0 -20 80 120'>
                 <motion.path
                     d="m 41 20 l -16 0 l 0 -7 l 40 0 l 2 0 l 0 7 l -16 0 l 0 31 l -10 0 l 0 -31"
                     fill="transparent"

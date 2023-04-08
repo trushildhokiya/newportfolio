@@ -34,17 +34,17 @@ const About = () => {
                                 </p>
                                 <p className='py-3 text-[#4c6763] font-Nunito text-xl text-justify'>
                                     Currently studying at <em><strong><abbr className='mx-1 mr-3 no-underline text-[#025A4E]' title='K.J. Somaiya Institute Of Technology '>KJSIT</abbr></strong></em>
-                                    Pursuing BTECH in Computer Science
+                                    Pursuing <abbr className='mx-1 mr-1 no-underline' title='Bachelors of Technology'>BTECH</abbr> in Computer Science
                                     <p className='font-Nunito font-bold '>2021-2025</p>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <img src={Image1} className=' object-cover md:h-[55rem] lg:h-[45rem]' alt="life" />
+                        <img src={Image1} className=' object-cover h-full w-auto' alt="life" />
                     </div>
                     <div>
-                        <img src={Image2} className=' object-cover md:h-[55rem] lg:h-[45rem]' alt="life" />
+                        <img src={Image2} className=' object-cover h-full w-auto' alt="life" />
                     </div>
                     <div className='p-6'>
                         <div className='flex flex-col p-2 md:px-[2rem]'>
@@ -57,10 +57,10 @@ const About = () => {
                             </ul>
                             <div className='tag-blocks-right text-center font-Nunito  font-bold text-xl text-[rgb(237,231,222)] self-end md:w-72 w-[15rem] p-4 my-4 '>Hobbies and Some stuff</div>
                             <p className='p-5 text-xl font-Nunito text-[#4c6763] text-justify'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
