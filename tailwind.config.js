@@ -8,7 +8,8 @@ module.exports = {
       fontFamily: {
         Lato: ["Lato", "sans-serif"],
         Lobster:["Lobster","cursive"],
-        Bebas:["Bebas Neue","cursive"]
+        Bebas:["Bebas Neue","cursive"],
+        Nunito:['Nunito Sans',"sans-serif"]
        },
     },
   },

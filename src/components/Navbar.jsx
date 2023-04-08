@@ -16,14 +16,16 @@ const Navbar = () => {
         <div>
             <div className=' flex w-full h-24 bg-[rgb(4,4,4)] p-2 '>
                 <div className='h-16 md:ml-5'>
-                    <SvgIcon />
+                    <a href="/">
+                        <SvgIcon />
+                    </a>
                 </div>
                 <div className='w-full pl-5 pr-5  flex items-center flex-row-reverse flex-wrap'>
                     <div className='hidden md:flex  w-96   mr-[1rem] md:mr-[3rem]'>
-                        <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>About</a>
-                        <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>Experience</a>
-                        <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>Projects</a>
-                        <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>Contact</a>
+                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>About</motion.a>
+                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Experience</motion.a>
+                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Projects</motion.a>
+                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
                     </div>
                     <div className='md:hidden'>
                         <Hamburger color='white' direction='right' duration={0.8} toggled={open} toggle={setOpen} />
@@ -33,12 +35,12 @@ const Navbar = () => {
             <motion.div
                 animate={open ? "open" : "closed"}
                 variants={variants}
-                transition={{duration:0.1}}
+                transition={{ duration: 0.1 }}
                 className={` flex-col md:hidden duration-300 ${open ? "flex" : "hidden"} `}>
-                <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>About</a>
-                <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>Experience</a>
-                <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>Projects</a>
-                <a href="#" className='text-white font-Bebas text-xl hover:text-amber-400 md:hover:scale-125 hover:scale-105 duration-300 flex-1 p-3 ms-4'>Contact</a>
+                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>About</motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Experience</motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Projects</motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
             </motion.div>
         </div>
     )
