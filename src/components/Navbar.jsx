@@ -25,7 +25,7 @@ const Navbar = () => {
                         <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>About</motion.a>
                         <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Experience</motion.a>
                         <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Projects</motion.a>
-                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
+                        <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.25 }} href="#contact" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
                     </div>
                     <div className='md:hidden'>
                         <Hamburger color='white' direction='right' duration={0.8} toggled={open} toggle={setOpen} />
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>About</motion.a>
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Experience</motion.a>
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Projects</motion.a>
-                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} href="#contact" className='text-white font-Bebas text-xl hover:text-amber-400  duration-150 flex-1 p-3 ms-4'>Contact</motion.a>
             </motion.div>
         </div>
     )
