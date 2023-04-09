@@ -2,18 +2,37 @@ import React from 'react';
 import '../static/styles/AboutMe.css';
 import Image1 from '../static/Images/image-1.jpg';
 import Image2 from '../static/Images/image-2.jpg';
+import { motion } from 'framer-motion';
+
 const About = () => {
     return (
         <div className='md:p-5 mt-7 mb-[10rem] p-2' id="about-me">
             <div className='md:mx-10  mx-2  bg-[rgb(237,231,222)] rounded-[2px] '>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div className='p-5'>
-                        <h1 className='text-center text-[#025A4E] font-Lobster text-[4rem]'> About Me</h1>
-                        <p className=' px-6 mt-4 font-Nunito text-xl text-justify text-[#4c6763]'>
+                        <motion.h1
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className='text-center text-[#025A4E] font-Lobster text-[4rem]'>
+                            About Me
+                        </motion.h1>
+                        <motion.p
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className=' px-6 mt-4 font-Nunito text-xl text-justify text-[#4c6763]'>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-                        </p>
+                        </motion.p>
 
-                        <div className='px-6 my-6'>
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className='px-6 my-6'>
                             <div className=' p-4 block-tags font-Nunito text-xl font-bold w-[15rem] md:w-[20rem]'> Personal Life & Education </div>
                             <div className='my-3'>
                                 <p className='py-3 text-[#4c6763] font-Nunito text-xl flex'>
@@ -38,7 +57,7 @@ const About = () => {
                                     <p className='font-Nunito font-bold '>2021-2025</p>
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div>
                         <img src={Image1} className=' object-cover h-full w-auto' alt="life" />
@@ -49,16 +68,26 @@ const About = () => {
                     <div className='p-6'>
                         <div className='flex flex-col p-2 md:px-[2rem]'>
                             <div className='tag-blocks-right text-center font-Nunito  font-bold text-xl text-[rgb(237,231,222)] self-end md:w-72 w-[15rem] p-4 my-4 '>Skills</div>
-                            <ul className='self-end text-xl font-Nunito text-[#4c6763] p-5 my-4 text-center md:text-left'>
+                            <motion.ul
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: false, amount: 0.5 }}
+                                className='self-end text-xl font-Nunito text-[#4c6763] p-5 my-4 text-center md:text-left'>
                                 <li className='my-1'>Web Development</li>
                                 <li className='my-1'>Android Development (Basic)</li>
                                 <li className='my-1'>C , Java , Python</li>
                                 <li className='my-1'>Adobe XD , Figma</li>
-                            </ul>
+                            </motion.ul>
                             <div className='tag-blocks-right text-center font-Nunito  font-bold text-xl text-[rgb(237,231,222)] self-end md:w-72 w-[15rem] p-4 my-4 '>Hobbies and Some stuff</div>
-                            <p className='p-5 text-xl font-Nunito text-[#4c6763] text-justify'>
+                            <motion.p
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: false, amount: 0.5 }}
+                                className='p-5 text-xl font-Nunito text-[#4c6763] text-justify'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                            </motion.p>
                         </div>
 
                     </div>

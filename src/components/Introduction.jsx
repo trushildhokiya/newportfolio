@@ -6,15 +6,20 @@ import Resume from '../static/documents/resume.pdf'
 
 const Introduction = () => {
 
-    const transition = { duration: 2, repeat: Infinity, repeatType: "loop", repeatDelay: 1, ease: "easeInOut" }
-
 
     return (
         <div className=' p-4 md:p-9 intro-container'>
             <div className='text-white grid col-span-6 grid-col-1 lg:grid-cols-2'>
                 <div className='md:px-6'>
                     <p className='font-Lato text-xl py-6 text-center md:text-left tracking-wider'>Hello,</p>
-                    <h2 className='font-Lobster text-[4rem] text-amber-400  text-center md:text-left'>I'm Trushil Dhokiya</h2>
+                    <motion.h2
+                        initial={{opacity:0 , y:40}}
+                        whileInView={{opacity:1 , y:0}}
+                        transition={{duration:1}}
+                        viewport={{once:false , amount:0.5}}
+                        className='font-Lobster text-[4rem] text-amber-400  text-center md:text-left'>
+                        I'm Trushil Dhokiya
+                    </motion.h2>
                     <p className='text-center md:text-left text-xl font-Lato py-6 tracking-widest'>
                         <Typewriter
                             onInit={(typewriter) => {

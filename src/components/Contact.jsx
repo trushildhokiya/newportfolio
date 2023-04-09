@@ -9,14 +9,39 @@ const Contact = () => {
             <div className='md:mx-10  mx-2  bg-teal-900 rounded-[2px] '>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div>
-                        <h2 className='p-3 font-Lobster text-[4rem] m-4 mt-[5rem] text-center flex-wrap text-white'>Lets Connect!</h2>
-                        <div className='flex justify-center'>
+                        <motion.h2
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className='p-3 font-Lobster text-[4rem] m-4 mt-[5rem] text-center flex-wrap text-white'
+                        >
+                            Lets Connect!
+                        </motion.h2>
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className='flex justify-center'>
                             <hr className='w-64 border-4 border-white'></hr>
-                        </div>
-                        <p className='p-10  px-[3rem] mt-[5rem] mb-[2rem] text-white text-justify text-xl font-Nunito'>
+                        </motion.div>
+                        <motion.p
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className='p-10  px-[3rem] mt-[5rem] mb-[2rem] text-white text-justify text-xl font-Nunito'
+                        >
                             I love to design and develop. I am a student currently pursuing Bachelors in Computer Science. I love to work on web Technologies and am fairly skilled in UI/UX . If you want too collabrate Connect with me or drop a mail
-                        </p>
-                        <div className='social mb-[5rem]'>
+                        </motion.p>
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: false, amount: 0.5 }}
+                            className='social mb-[5rem]'
+                            >
                             <h2 className='px-3 font-Lato text-2xl m-4 text-center flex-wrap text-white'>Follow Me On</h2>
                             <div className='flex justify-center mt-[3rem]'>
                                 <div className='flex justify-evenly items-center w-72 flex-wrap'>
@@ -37,7 +62,7 @@ const Contact = () => {
                                     </motion.a>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className='hidden md:block'>
                         <img src={Camera} className='object-cover h-full w-auto' />
