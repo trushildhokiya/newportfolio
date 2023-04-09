@@ -65,7 +65,7 @@ const Contact = () => {
                         </motion.div>
                     </div>
                     <div className='hidden md:block'>
-                        <img src={Camera} className='object-cover h-full w-auto' />
+                        <img src={Camera} className='object-cover  h-full w-auto' />
                     </div>
                 </div>
             </div>

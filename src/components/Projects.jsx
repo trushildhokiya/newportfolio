@@ -1,17 +1,24 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import '../static/styles/Projects.css'
+
 const Projects = () => {
     return (
         <div className=' md:p-5 mt-7 mb-[10rem] p-1' id='projects'>
             <div className='mx-2 md:mx-10'>
                 <h2 className='text-amber-400 text-[4rem] font-Lobster my-3 p-2'> Projects </h2>
-                <div className='grid grid-cols-1 bg-red-400 p-5 text-center'>
+                <div className='grid grid-cols-1 bg-red-400 p-5 projectContainer text-center relative'>
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                     >
+                        <motion.div
+                            whileTap={{ scale: 0.9 }}
+                            className='label-rm p-5 bg-black text-white   absolute right-10 -top-20 opacity-0 font-Nunito text-xl '>
+                            <a href="https://fpms.kjsieit.com/" target='_blank'> Visit Deployment </a>
+                        </motion.div>
                         <h1 className='my-10 mt-[7rem] text-[3rem] font-Nunito text-white'>
                             Faculty Profile Management System
                         </h1>
@@ -25,13 +32,19 @@ const Projects = () => {
                     </motion.div>
                 </div>
                 <div className='grid  grid-cols-1 md:grid-cols-2'>
-                    <div className='bg-[#9c9c9c] p-5'>
+                    <div className='bg-[#9c9c9c] p-5 projectContainer relative'>
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: false, amount: 0.5 }}
                         >
+
+                            <motion.div
+                                whileTap={{ scale: 0.9 }}
+                                className='label-rm p-5 bg-black text-white   absolute right-10 -top-[1rem] opacity-0 font-Nunito text-xl '>
+                                <a href="https://ephemeral-lebkuchen-2d5ee7.netlify.app/login" target='_blank'> View Deployment </a>
+                            </motion.div>
 
                             <h2 className='text-center mt-[7rem] mb-[4rem] font-Nunito text-[3rem] text-white'>
                                 PixInt
@@ -42,13 +55,19 @@ const Projects = () => {
                             </p>
                         </motion.div>
                     </div>
-                    <div className='bg-black p-5'>
+                    <div className='bg-black p-5 projectContainer relative'>
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: false, amount: 0.5 }}
                         >
+
+                            <motion.div
+                                whileTap={{ scale: 0.9 }}
+                                className='label-rm p-5 bg-white text-black   absolute right-10 -top-[1rem] opacity-0 font-Nunito text-xl '>
+                                <a href="https://glittery-conkies-907c71.netlify.app/" target='_blank'> View Deployment </a>
+                            </motion.div>
 
                             <h2 className='text-center animate-pulse mt-[7rem] mb-[4rem] font-Nunito text-[3rem] text-white'>
                                 AlgoViz

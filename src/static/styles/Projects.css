@@ -1,0 +1,7 @@
+.projectContainer:hover .label-rm{
+    opacity: 1;
+    top:0;
+    transition: all;
+    transition-duration: 0.8s;
+    font-weight: bold;
+}
