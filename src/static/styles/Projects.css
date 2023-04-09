@@ -5,3 +5,15 @@
     transition-duration: 0.8s;
     font-weight: bold;
 }
+
+.char{
+    transform: translateY(55px);
+    transition: all 0.65s;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#my-text{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
