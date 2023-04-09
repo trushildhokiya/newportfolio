@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <div className=' md:p-5 mt-7 mb-[10rem] p-1'>
+        <div className=' md:p-5 mt-7 mb-[10rem] p-1' id='projects'>
             <div className='mx-2 md:mx-10'>
                 <h2 className='text-amber-400 text-[4rem] font-Lobster my-3 p-2'> Projects </h2>
                 <div className='grid grid-cols-1 bg-red-400 p-5 text-center'>
@@ -28,7 +28,7 @@ const Projects = () => {
                         </p>
                     </div>
                     <div className='bg-black p-5'>
-                        <h2 className='text-center mt-[7rem] mb-[4rem] font-Nunito text-[3rem] text-white'>
+                        <h2 className='text-center animate-pulse  mt-[7rem] mb-[4rem] font-Nunito text-[3rem] text-white'>
                             AlgoViz
                         </h2>
                         <hr className=' w-52 mx-auto border-4 border-white' />
