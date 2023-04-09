@@ -5,6 +5,7 @@ import Introduction from '../../components/Introduction';
 import Footer from '../../components/Footer';
 import Contact from '../../components/Contact';
 import About from '../../components/About';
+import Projects from '../../components/Projects';
 const Home = () => {
 
   const bgImage = "../../static/Images/background.jpeg";
@@ -14,6 +15,7 @@ const Home = () => {
         <Navbar />
         <Introduction />
         <About />
+        <Projects />
         <Contact />
         <Footer />
       </div>
