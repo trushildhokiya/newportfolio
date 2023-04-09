@@ -54,7 +54,7 @@ const Navbar = () => {
             <motion.div
                 animate={open ? "open" : "closed"}
                 variants={variants}
-                transition={{ duration: 0.1 }}
+                transition={{ duration: 0.2 }}
                 className={` flex-col md:hidden duration-300 ${open ? "flex" : "hidden"} `}>
                 <motion.p whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} className='text-white font-Bebas text-xl hover:text-amber-400 hover:scale-125  duration-150 flex-1 p-3 ms-4'>
                             <Link to='about-me' activeClass="active" spy={true} smooth={true} offset={50} duration={500} >

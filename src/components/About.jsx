@@ -24,7 +24,8 @@ const About = () => {
                             transition={{ duration: 1 }}
                             viewport={{ once: false, amount: 0.5 }}
                             className=' px-6 mt-4 font-Nunito text-xl text-justify text-[#4c6763]'>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                            Im Trushil , a enthusiastic web developer and UX Designer . My journey as a CS Engineer began during my school days when I first learnt about html, css . Later on I developed a keen interest on learning about web development , which lead me on making user frienldy designs and field of UX.
+                            {/* It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, */}
                         </motion.p>
 
                         <motion.div
@@ -52,9 +53,9 @@ const About = () => {
                                     <span className='mx-3'>trushil.d@somaiya.edu</span>
                                 </p>
                                 <p className='py-3 text-[#4c6763] font-Nunito text-xl text-justify'>
-                                    Currently studying at <em><strong><abbr className='mx-1 mr-3 no-underline text-[#025A4E]' title='K.J. Somaiya Institute Of Technology '>KJSIT</abbr></strong></em>
+                                    Currently studying at <em><strong><abbr className='mx-1 mr-3 no-underline text-[#025A4E]' title='K.J. Somaiya Institute Of Technology '><a href='https://kjsit.somaiya.edu.in/en#'>KJSIT</a></abbr></strong></em>
                                     Pursuing <abbr className='mx-1 mr-1 no-underline' title='Bachelors of Technology'>BTECH</abbr> in Computer Science
-                                    <p className='font-Nunito font-bold '>2021-2025</p>
+                                    <p className='font-Nunito font-bold '>Batch : 2021-2025</p>
                                 </p>
                             </div>
                         </motion.div>
@@ -86,7 +87,9 @@ const About = () => {
                                 transition={{ duration: 1 }}
                                 viewport={{ once: false, amount: 0.5 }}
                                 className='p-5 text-xl font-Nunito text-[#4c6763] text-justify'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                I love to travel visit new places interact with new people learn something new from them . I love to adventure and live my life at the fullest with no regrets . I love to read books on thriller , mystery . Love listening to music during rains . Im eager and hungry to learn more and always willing to help others . 
+                                <blockquote className='font-bold text-center ' cite='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3944843/'>I'm master of my fate, I'm captian of my soul</blockquote>
+                                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. */}
                             </motion.p>
                         </div>
 
